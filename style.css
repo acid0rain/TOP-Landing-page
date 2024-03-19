@@ -1,0 +1,122 @@
+
+
+.header-container {   /*this contains the header logo and lists and banner */
+    border: solid navy 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    padding: 0;
+
+}
+
+ul {
+    list-style-type: none; /* remove list bullets and underlines */
+    text-decoration: none;
+    display: flex;
+    align-content: end;
+    gap:12px
+}
+
+.header {
+    border: solid salmon 3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+
+}
+
+.header-logo {
+    align-self: center;   /*center header logo across vertical axis */
+    font-size: 22px;
+}
+
+/* banner components */ 
+
+.banner {
+    border: solid aqua 3px;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0;
+}
+
+.banner-image {
+    display: flex;
+    max-width: 300px;
+    height: auto;
+    border: solid greenyellow 3px;
+}
+
+button {
+    background-color: rgb(20, 130, 221);
+    padding: 6px 8px /* height , width */
+
+}
+
+
+body {
+    border: solid  magenta 5px;
+}
+
+/* main section with random info and pictures */
+
+.main-container {
+    border: solid darkolivegreen 3px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+
+}
+
+
+.container { /*container to fit pictures inside*/
+    width: 200px;
+    height: 200px;
+    border: solid yellow 3px;
+
+  }
+
+.boxes-container { /* flex container to display boxes in a row*/
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to next row */
+    justify-content: center;
+    gap:20px;
+    border: solid blue 5px;
+    padding: 16px 0;
+}
+
+  .box-container {  /*container to hold img container + subtext and align it with flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* quote  section */
+
+.quote-box {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.quote-box {
+    border: solid goldenrod 3px;
+}
+
+/* CTA section */
+
+
+.cta-box {
+
+    border: solid purple 3px;
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    margin-left: 500px;
+
+}
+
+footer {
+    border: solid darkblue 3px;
+}
