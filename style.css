@@ -4,7 +4,6 @@
 }
 roboto
 .header-container {   /*this contains the header logo and lists and banner */
-    border: solid navy 5px;
     display: flex;
     flex-direction: column;
     margin: 0 0;
@@ -21,7 +20,6 @@ ul {
 }
 
 .header {
-    border: solid salmon 3px;
     display: flex;
     justify-content: space-between;
     padding: 0 8px;
@@ -31,12 +29,12 @@ ul {
 .header-logo {
     align-self: center;   /*center header logo across vertical axis */
     font-size: 22px;
+    margin-left: 20px;
 }
 
 /* banner components */ 
 
 .banner {
-    border: solid aqua 3px;
     display: flex;
     justify-content: space-around;
     padding: 24px 0;
@@ -46,7 +44,6 @@ ul {
     display: flex;
     max-width: 300px;
     height: auto;
-    border: solid #3882f6 3px;
     min-width: 500px;
     flex: 1;
 }
@@ -59,14 +56,13 @@ button {
 
 
 body {
-    border: solid  magenta 5px;
     margin: 0%;
+    
 }
 
 /* main section with random info and pictures */
 
 .main-container {
-    border: solid darkolivegreen 3px;
     display: flex;
     flex-direction: column; /* Stack children vertically */
     align-items: center;
@@ -77,8 +73,8 @@ body {
 .container { /*container to fit pictures inside*/
     width: 200px;
     height: 200px;
-    border: solid #3882f6 5px;
     border-radius: 25px;
+    border: solid #3882f6 3px;
 
   }
 
@@ -87,7 +83,6 @@ body {
     flex-wrap: wrap; /* Allow boxes to wrap to next row */
     justify-content: center;
     gap:20px;
-    border: solid blue 5px;
     padding: 16px 0;
 }
 
@@ -95,7 +90,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid red 3px;
 }
 
 
@@ -109,45 +103,52 @@ body {
 }
 
 .quote-box {
-    border: solid goldenrod 3px;
     background-color: #e5e7eb ;
     min-height: 300px;
 }
 
 /* CTA section */
 
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 
+}
 .cta-box {  
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: solid #3882f6 5px;
-    max-width: 800px;
-    padding: 20px; /*for better spacing */
+    max-width: 900px;
+    padding: 10px; /*for better spacing */
+    margin: 45px;
+    flex: 1 1 400px;
+    border-radius: 25px;
 
   
 }
 
 .flex-cta {
     display: flex;
-    justify-content:center;
+    flex-direction: column;
     align-items: center;
-    border: solid yellow 3px;
-    min-width: auto;
-    min-height: 100px;
-    margin: 0 32px;
-    flex-wrap: wrap;
+    width: 100%; /* ensure full width */
+    text-align: left;
+
     
 }
 
 .signup-text {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    gap: 32px;
 }
 
 footer {
-    border: solid rgb(37, 177, 25) 3px;
+    text-align: center;
 }
 
 
@@ -182,7 +183,6 @@ ul {
     text-wrap: wrap;
     flex-direction: column;
     max-width: 500px;
-    border: solid red 3px;
 
 }
 
@@ -231,17 +231,13 @@ button:hover {
 
 
 
-
 .h3 {
     color: #e5e7eb;
 }
 
 
-
 .flex-cta {
-    color: #e5e7eb;
-
-    
+    color: #e5e7eb;  
 }
 
 .cta-box {
@@ -250,4 +246,14 @@ button:hover {
 
 .signup {
     border: solid #e5e7eb 2px;
+    text-wrap: nowrap;
+    text-align: center;
+    align-self: center;
+    padding: 5px 20px;
+}
+
+footer {
+    background-color: #1F2937;
+    color: #f9faf8;
+    padding: 32px;
 }
