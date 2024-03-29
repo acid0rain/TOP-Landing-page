@@ -46,7 +46,7 @@ ul {
     display: flex;
     max-width: 300px;
     height: auto;
-    border: solid greenyellow 3px;
+    border: solid #3882f6 3px;
     min-width: 500px;
     flex: 1;
 }
@@ -60,6 +60,7 @@ button {
 
 body {
     border: solid  magenta 5px;
+    margin: 0%;
 }
 
 /* main section with random info and pictures */
@@ -76,7 +77,8 @@ body {
 .container { /*container to fit pictures inside*/
     width: 200px;
     height: 200px;
-    border: solid yellow 3px;
+    border: solid #3882f6 5px;
+    border-radius: 25px;
 
   }
 
@@ -93,6 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid red 3px;
 }
 
 
@@ -116,21 +119,35 @@ body {
 
 .cta-box {  
     display: flex;
-    border: solid purple 3px;
-    display: flex;
-    justify-content: space-around;
-    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    border: solid #3882f6 5px;
+    max-width: 800px;
+    padding: 20px; /*for better spacing */
+
+  
 }
 
 .flex-cta {
     display: flex;
-    justify-content: center;
-    gap:32px;
+    justify-content:center;
+    align-items: center;
+    border: solid yellow 3px;
+    min-width: auto;
+    min-height: 100px;
+    margin: 0 32px;
+    flex-wrap: wrap;
     
 }
 
+.signup-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 footer {
-    border: solid darkblue 3px;
+    border: solid rgb(37, 177, 25) 3px;
 }
 
 
@@ -178,7 +195,7 @@ button {
     background-color: #3882f6;
     color: #f9faf8;
     border: none;
-    padding: 15px 32px;
+    padding: 10px 32px;
     max-width: 130px;
     border-radius: 12px;
     font-size: 16px;
@@ -198,13 +215,39 @@ button:hover {
 }
 
 .author {
+    display: inline-block;
+    align-self:self-end;
     font-size: 36px;
     font-weight:bold;
     color: #1F2937;
+    text-align: end;
 }
 
 .info-header {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+}
+
+
+
+
+.h3 {
+    color: #e5e7eb;
+}
+
+
+
+.flex-cta {
+    color: #e5e7eb;
+
+    
+}
+
+.cta-box {
+    background-color: #3882f6;
+}
+
+.signup {
+    border: solid #e5e7eb 2px;
 }
